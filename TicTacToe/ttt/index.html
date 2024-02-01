@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <h1 onclick=home()>Tic Tac Toe</h1>
+    <div id="board">
+        <div class="box" id="one-one" onclick=takeSquare(this.id)></div>
+        <div class="box" id="one-two" onclick=takeSquare(this.id)></div>
+        <div class="box" id="one-three" onclick=takeSquare(this.id)></div>
+        <div class="box" id="two-one" onclick=takeSquare(this.id)></div>
+        <div class="box" id="two-two" onclick=takeSquare(this.id)></div>
+        <div class="box" id="two-three" onclick=takeSquare(this.id)></div>
+        <div class="box" id="three-one" onclick=takeSquare(this.id)></div>
+        <div class="box" id="three-two" onclick=takeSquare(this.id)></div>
+        <div class="box" id="three-three" onclick=takeSquare(this.id)></div>
+    </div>
+    <button id="restart-game" class="bottom-element hide" onclick=restartGame()>Restart Game</button>
+    <p id="current-player-text" class="bottom-element hide"></p>
+    <button id="start-game" class="bottom-element" type="button" onclick=startGame()>Click To Play!</button>
+    <p id="game-over-text" class="hide"></p>
+</body>
+<script src="./script.js"></script>
+</html>
